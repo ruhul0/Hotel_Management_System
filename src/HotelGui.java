@@ -1,5 +1,3 @@
-import javafx.embed.swing.JFXPanel;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -113,13 +111,8 @@ public class HotelGui {
                     bookingmenu.setVisible(true);
                     bookingmenu.setSize(500,700);
 
-                    bookingmenu.setLayout(null);
-                    image.setVisible(true);
-                    image.setBounds(0,0,500,700);
 
                     String[] floor1 = {"1st","2nd","3rd"};
-
-
                     floor = new JComboBox(floor1);
                     bookingmenu.add(floor);
                     floor.setVisible(true);
@@ -134,6 +127,11 @@ public class HotelGui {
 
 
                     login.dispose();
+                    bookingmenu.setLayout(null);
+                    image.setVisible(true);
+                    image.setBounds(0, 0, 500, 700);
+
+
                     bookingmenu.add(image);
 
                 }
